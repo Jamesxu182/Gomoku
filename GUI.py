@@ -39,7 +39,7 @@ class Chess_Board_Canvas(Tkinter.Canvas):
 
                 if (square_distance <= 200) and (not self.step_record_chess_board.has_record(i, j)):
                     if self.step_record_chess_board.who_to_play() == 1:
-                        self.create_oval(self.chess_board_points[i][j].pixel_x-10, self.chess_board_points[i][j].pixel_y-10, self.chess_board_points[i][j].pixel_x+10, self.chess_board_points[i][j].pixel_y+10)
+                        self.create_oval(self.chess_board_points[i][j].pixel_x-10, self.chess_board_points[i][j].pixel_y-10, self.chess_board_points[i][j].pixel_x+10, self.chess_board_points[i][j].pixel_y+10, fill='White')
 
                     elif self.step_record_chess_board.who_to_play() == 2:
                         self.create_oval(self.chess_board_points[i][j].pixel_x-10, self.chess_board_points[i][j].pixel_y-10, self.chess_board_points[i][j].pixel_x+10, self.chess_board_points[i][j].pixel_y+10, fill='Black')

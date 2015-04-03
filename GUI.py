@@ -72,9 +72,3 @@ class Chess_Board_Frame(Tkinter.Frame):
 
         self.chess_board_label_frame.pack();
         self.chess_board_canvas.pack();
-
-if __name__ == '__main__':
-    window = Tkinter.Tk()
-    gui_chess_board = Chess_Board_Frame(window)
-    gui_chess_board.pack()
-    window.mainloop()
